@@ -29,6 +29,7 @@ body {
     justify-content: space-around;
     position: fixed; /*needed width to work*/
     width: 100%; 
+    align-items: center;
     top: 0;
     z-index: 5;
 }
@@ -56,6 +57,11 @@ body {
     padding: 8px 5px;
     background-color: var(--light-pink);
     border-radius: 5px;
+    color: white;
+}
+
+.logo{
+    width: 100px;
 }
 
 
@@ -78,6 +84,7 @@ body {
         position: fixed;
     }
     .nav-links {
+        top: 0;
         position: fixed;
         background: var(--dark-pink);
         height: 100vh;
@@ -91,6 +98,7 @@ body {
     }
     .nav-links li:not(:last-child) {
         margin-bottom: 3rem;
+        margin-right: 0;
     }
     .hamburger {
         cursor: pointer;
