@@ -1,0 +1,118 @@
+.banner {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.banner-info {
+    height: 262px;
+    margin-right: 3rem;
+}
+
+.banner h1 {
+    color: var(--black-text);
+    font-size: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.banner span {
+    display: block;
+    font-size: 25px;
+    font-style: italic;
+    color: var(--grey);
+    margin-bottom: 2rem;
+}
+.banner .button {
+    padding: 10px 30px;
+    border: 1px solid var(--dark-pink);
+    border-radius: 30px;
+    color: var(--dark-pink);
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.10);
+    transition: all .3s ease;
+}
+.banner .button:hover {
+    color: var(--grey);
+    border: 1px solid var(--grey);
+}
+
+.banner-info .sociais {
+    margin-top: 2rem;
+}
+
+.banner-info .sociais .fa-instagram {
+    margin-right: 15px;
+}
+
+.banner img {
+    border-radius: 8px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/*balls*/
+
+.ball-1 {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 120px;
+    height: 120px;
+    background-color: var(--light-pink);
+    border-radius: 50%;
+    z-index: -2;
+}
+.ball-2 {
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    width: 200px;
+    height: 200px;
+    background-color: var(--light-pink);
+    border-radius: 50%;
+    z-index: -2;
+}
+.ball-3 {
+    position: absolute;
+    top: 25%;
+    right: 20%;
+    width: 150px;
+    height: 150px;
+    background-color: var(--light-pink);
+    border-radius: 50%;
+    z-index: -2;
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        position: relative;
+    }
+    .banner-info {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 160px;
+        margin-right: 0;
+        align-self: center;
+        margin-bottom: 1rem;
+    }
+    .banner-info .sociais {
+        position: absolute;
+        bottom: 5%;
+    }
+    .banner .button {
+        text-align: center;
+    }
+    .ball-2 {
+        display: none;
+    }
+    .ball-3 {
+        right: 23%;
+        top: 70%;
+    }
+}

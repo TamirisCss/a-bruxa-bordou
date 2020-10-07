@@ -1,0 +1,127 @@
+:root {
+    --main-font: 'Zilla Slab', serif;
+
+    --light-pink: rgba(243, 127, 160, 0.1);
+    --dark-pink: #b783b8;
+    --black-text: #000000;
+    --grey: rgba(0, 0, 0, 0.5);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: #fff;
+}
+
+.nav-menu {
+    display: flex;
+    background-color: var(--dark-pink);
+    justify-content: space-around;
+    position: fixed; /*needed width to work*/
+    width: 100%; 
+    top: 0;
+    z-index: 5;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links li:not(:last-child) {
+    margin-right: 25px;
+}
+
+.nav-links li a {
+    color: var(--black-text);
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+.nav-links li a:hover {
+    padding: 8px 5px;
+    background-color: var(--light-pink);
+    border-radius: 5px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0;
+    }
+    .logo {
+        margin-left: 5%;
+    }
+    .line {
+        width: 30px;
+        height: 3px;
+        background-color: var(--black-text);
+        margin: 5px;
+    }
+    .nav-menu {
+        position: relative;
+        position: fixed;
+    }
+    .nav-links {
+        position: fixed;
+        background: var(--dark-pink);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links li:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+    .hamburger {
+        cursor: pointer;
+        align-self: center;
+        z-index: 4;
+    }
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-links li a {
+        font-size: 25px;
+    }
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.8s;
+    }
+    li.fade {
+        opacity: 1;
+    }
+}
+

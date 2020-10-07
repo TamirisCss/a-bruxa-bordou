@@ -1,0 +1,35 @@
+.form-footer-container {
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    align-items: center;
+}
+
+.footer span {
+    font-size: .70em;
+    color: var(--grey);
+}
+
+.footer .sociais {
+    display: flex;
+    justify-content: space-between;
+}
+.footer .sociais .fa-instagram {
+    margin-right: 15px;
+}
+.fab {
+    font-size: 25px;
+    color: var(--black-text);
+    transition: all .3s ease;
+}
+
+.fab:hover {
+    color: var(--dark-pink);
+}
+
+@media screen and (max-width: 768px) {
+
+}

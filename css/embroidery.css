@@ -1,0 +1,60 @@
+.bordados-container {
+    padding-top: 90px;
+    z-index: 1;
+}
+.bordados-h1-container {
+    display: flex;
+    justify-content: center;
+}
+.bordados-h1 {
+    color: var(--black-text);
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: -1;
+}
+.bordados-h1::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: var(--dark-pink);
+}
+
+.main-carousel {
+    margin: 0 2em;
+}
+
+.box {
+    width: 270px;
+    height: 400px;
+    background-color: var(--light-pink);
+    text-align: center;
+    margin: 2rem 0 2rem 2rem;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.10);
+}
+
+.box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.bordado-tittle {
+    font-size: 1.5em;
+    color: var(--black-text);
+    margin-top: 1rem;
+}
+
+.bordado-about {
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: center;
+    color: var(--black-text);
+    margin: 1rem;
+}
