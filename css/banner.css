@@ -103,7 +103,7 @@
     }
     .banner-info .sociais {
         position: absolute;
-        bottom: 5%;
+        bottom: 0;
     }
     .banner .button {
         text-align: center;
